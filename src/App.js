@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 import './App.css';
 
 function App() {
+  const [list, createList] = useState([]);
+
+  useEffect(() => {
+    // Make a request for a user with a given ID
+    axios
+      .get('https://ice-creams-api.herokuapp.com/')
+      .then(response => createList(response.data))
+      .catch(error => console.log(error))
+      .then(function () {
+        // always executed
+    });
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {list.map(item => {
+        return (
+          <div className="ice-cream-card">
+            <h4>Name: {item.name}</h4>
+            <p>Rating: {item.rating}</p>
+            <img src={item.image} alt='alt'/>
+            <p>DG Says: {item.tasting_notes}</p>
+          </div>
+        )
+      })}
     </div>
   );
 }
