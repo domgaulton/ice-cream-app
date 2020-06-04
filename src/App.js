@@ -49,7 +49,7 @@ function App() {
               <h4><b>Name:</b> {item.name}</h4>
               <p><b>Rating:</b> {item.rating}</p>
               <p><b>DG Says:</b> {item.tasting_notes}</p>
-              <p className="meta"><b>Website</b> <a href="{item.url}">{item.name}</a></p>
+              <p className="meta"><b>Website</b> <a href={item.url}>{item.name}</a></p>
               <p className="meta"><b>Scoff Date:</b> {date}</p>
             </div>
             </div>
