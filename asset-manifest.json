@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ice-cream-app/static/css/main.c777af92.chunk.css",
+    "main.css": "/ice-cream-app/static/css/main.1f299ade.chunk.css",
     "main.js": "/ice-cream-app/static/js/main.1765204b.chunk.js",
     "main.js.map": "/ice-cream-app/static/js/main.1765204b.chunk.js.map",
     "runtime-main.js": "/ice-cream-app/static/js/runtime-main.d3da2ded.js",
@@ -8,15 +8,15 @@
     "static/js/2.760e9c8b.chunk.js": "/ice-cream-app/static/js/2.760e9c8b.chunk.js",
     "static/js/2.760e9c8b.chunk.js.map": "/ice-cream-app/static/js/2.760e9c8b.chunk.js.map",
     "index.html": "/ice-cream-app/index.html",
-    "precache-manifest.e8845ee45f715a5b5b4610f7564c0018.js": "/ice-cream-app/precache-manifest.e8845ee45f715a5b5b4610f7564c0018.js",
+    "precache-manifest.562b0433c93e056ae6a9766d8bf94611.js": "/ice-cream-app/precache-manifest.562b0433c93e056ae6a9766d8bf94611.js",
     "service-worker.js": "/ice-cream-app/service-worker.js",
-    "static/css/main.c777af92.chunk.css.map": "/ice-cream-app/static/css/main.c777af92.chunk.css.map",
+    "static/css/main.1f299ade.chunk.css.map": "/ice-cream-app/static/css/main.1f299ade.chunk.css.map",
     "static/js/2.760e9c8b.chunk.js.LICENSE.txt": "/ice-cream-app/static/js/2.760e9c8b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.d3da2ded.js",
     "static/js/2.760e9c8b.chunk.js",
-    "static/css/main.c777af92.chunk.css",
+    "static/css/main.1f299ade.chunk.css",
     "static/js/main.1765204b.chunk.js"
   ]
 }
