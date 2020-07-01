@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f6db255fa052077c4e562c139d9e3ae2",
+    "revision": "8ad9dc426ddbf5d486e8395c727cfc74",
     "url": "/ice-cream-app/index.html"
   },
   {
-    "revision": "e769a8ebf12e68071b0d",
-    "url": "/ice-cream-app/static/css/main.4086bcf1.chunk.css"
+    "revision": "3897eb7a8ae72c94ea25",
+    "url": "/ice-cream-app/static/css/main.6091dcaa.chunk.css"
   },
   {
     "revision": "f119d592ae78cf86962b",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ice-cream-app/static/js/2.6f747159.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e769a8ebf12e68071b0d",
+    "revision": "3897eb7a8ae72c94ea25",
     "url": "/ice-cream-app/static/js/main.4614c738.chunk.js"
   },
   {
