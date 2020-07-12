@@ -14,7 +14,7 @@ function App() {
       .then(response => {
         setList(response.data)
         const timer = setTimeout(() => {
-          setIsLoaded(false)
+          setIsLoaded(true)
         }, 1200);
         return () => clearTimeout(timer);
       })
