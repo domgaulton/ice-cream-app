@@ -1,15 +1,23 @@
 import React, {useState, useEffect} from 'react';
+import Loading from './Loading';
 import axios from 'axios';
 import './App.css';
 
 function App() {
   const [list, setList] = useState([]);
-  const [filter, setFilter] = useState('')
+  const [filter, setFilter] = useState('');
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     axios
       .get('https://ice-creams-api.herokuapp.com/')
-      .then(response => setList(response.data))
+      .then(response => {
+        setList(response.data)
+        const timer = setTimeout(() => {
+          setIsLoaded(false)
+        }, 1200);
+        return () => clearTimeout(timer);
+      })
       .catch(error => console.log(error))
       .then(function () {
         // always executed
@@ -41,7 +49,7 @@ function App() {
     setFilter(sortType)
   }
 
-  return (
+  return isLoaded ? (
     <div className="App">
       <header>
         <h1>Quarnatine Ice Cream Challenge</h1>
@@ -73,7 +81,7 @@ function App() {
               <p className="meta"><b>Scoff Date:</b> {date}</p>
               <div className="category">
                 {item.categories.map(category => {
-                  return <span>{category}</span>
+                  return <span key={category}>{category}</span>
                 })}
               </div>
             </div>
@@ -82,7 +90,7 @@ function App() {
         })}
       </main>
     </div>
-  );
+  ) : <Loading />;
 }
 
 export default App;
