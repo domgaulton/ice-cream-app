@@ -74,10 +74,10 @@ function App() {
               <img src={item.image} alt='alt'/>
             </div>
             <div className="ice-cream-card__text">
-              <h4><b>Name:</b> {item.name}</h4>
+              <h4>{item.name} ({item.brand})</h4>
               <p><b>Rating:</b> {item.rating}</p>
               <p><b>DG Says:</b> {item.tasting_notes}</p>
-              <p className="meta"><b>Website</b> <a href={item.url}>{item.name}</a></p>
+              <p className="meta">{item.brand}</p>
               <p className="meta"><b>Scoff Date:</b> {date}</p>
               <div className="category">
                 {item.categories.map(category => {
